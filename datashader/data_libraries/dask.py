@@ -77,6 +77,7 @@ def default(glyph, df, schema, canvas, summary, cuda=False):
     extend = glyph._build_extend(x_mapper, y_mapper, info, append)
 
     # Here be dragons
+    # https://github.com/holoviz/datashader/pull/926#discussion_r516753348
     # Get the dataframe graph
     graph = df.__dask_graph__()
 
